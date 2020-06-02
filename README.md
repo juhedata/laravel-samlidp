@@ -1,5 +1,5 @@
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/codegreencreative/laravel-samlidp.svg?style=flat-square)](https://packagist.org/packages/codegreencreative/laravel-samlidp)
-[![Total Downloads](https://img.shields.io/packagist/dt/codegreencreative/laravel-samlidp.svg?style=flat-square)](https://packagist.org/packages/codegreencreative/laravel-samlidp)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/juhedata/laravel-samlidp.svg?style=flat-square)](https://packagist.org/packages/juhedata/laravel-samlidp)
+[![Total Downloads](https://img.shields.io/packagist/dt/juhedata/laravel-samlidp.svg?style=flat-square)](https://packagist.org/packages/juhedata/laravel-samlidp)
 
 # Laravel (6+) SAML IdP
 
@@ -11,7 +11,7 @@
 ## Installation
 
 ```shell
-composer require codegreencreative/laravel-samlidp:^2.0
+composer require juhedata/laravel-samlidp:^2.0
 ```
 
 The rest of the instructions for installation are the same as ^1.0
@@ -25,7 +25,7 @@ This package allows you to implement your own Identification Provider (idP) usin
 Require this package with composer:
 
 ```shell
-composer require codegreencreative/laravel-samlidp:^1.0
+composer require juhedata/laravel-samlidp:^1.0
 ```
 
 Publish config
