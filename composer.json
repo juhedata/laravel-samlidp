@@ -1,12 +1,12 @@
 {
-    "name": "codegreencreative/laravel-samlidp",
+    "name": "juhedata/laravel-samlidp",
     "description": "Make your Laravel application an Idenification Provider using SAML 2.0.",
     "keywords": ["laravel", "saml", "saml 2.0", "auth", "acl", "sso", "idp"],
     "license": "MIT",
     "require": {
         "php": "^7.2",
-        "illuminate/support": "^6.0",
-        "illuminate/routing": "^6.0",
+        "illuminate/support": "^5.6",
+        "illuminate/routing": "^5.6",
         "lightsaml/lightsaml": "^1.4"
     },
     "autoload": {
