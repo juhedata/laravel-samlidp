@@ -1,5 +1,5 @@
 {
-    "name": "codegreencreative/laravel-samlidp",
+    "name": "juhedata/laravel-samlidp",
     "description": "Make your Laravel application an Idenification Provider using SAML 2.0.",
     "keywords": ["laravel", "saml", "saml 2.0", "auth", "acl", "sso", "idp"],
     "license": "MIT",
