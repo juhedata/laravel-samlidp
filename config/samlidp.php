@@ -13,7 +13,11 @@ return [
     // Outputs data to your laravel.log file for debugging
     'debug' => false,
     // Define the email address field name in the users table
+    // Used at CodeGreenCreative\SamlIdp\Events\Assertion@__construct
     'email_field' => 'email',
+    // Define the common name field name in the users table
+    // Used at CodeGreenCreative\SamlIdp\Events\Assertion@__construct
+    'name_field' => 'name',
     // The URI to your login page
     'login_uri' => 'login',
     // Log out of the IdP after SLO
