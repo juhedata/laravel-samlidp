@@ -1,34 +1,7 @@
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/codegreencreative/laravel-samlidp.svg?style=flat-square)](https://packagist.org/packages/codegreencreative/laravel-samlidp)
 [![Total Downloads](https://img.shields.io/packagist/dt/codegreencreative/laravel-samlidp.svg?style=flat-square)](https://packagist.org/packages/codegreencreative/laravel-samlidp)
 
-# Laravel (^8.0) SAML IdP
-
-## Whats changed in 4.0
-
-- Dropped Laravel 7.x support
-- Added guards for SAML SSO and SLO
-
-## Installation (not officially released)
-
-```shell
-composer require codegreencreative/laravel-samlidp:dev-master
-```
-
-# Laravel (^7.0) SAML IdP
-
-## Whats changed in 3.0
-
-- PHP 7.3+ required
-- Dropped Laravel 6.x support
-- Updated lightsaml package to a fork by @dpiquet https://github.com/4Labs/lightSAML
-
-## Installation
-
-```shell
-composer require codegreencreative/laravel-samlidp:^3.0
-```
-
-# Laravel (^6.0) SAML IdP
+# Laravel (6+) SAML IdP
 
 ## Whats changed in 2.0
 
@@ -43,7 +16,7 @@ composer require codegreencreative/laravel-samlidp:^2.0
 
 The rest of the instructions for installation are the same as ^1.0
 
-# Laravel (^5.6) SAML IdP
+# Laravel (5.6+) SAML IdP
 
 This package allows you to implement your own Identification Provider (idP) using the SAML 2.0 standard to be used with supporting SAML 2.0 Service Providers (SP).
 
@@ -55,7 +28,7 @@ Require this package with composer:
 composer require codegreencreative/laravel-samlidp:^1.0
 ```
 
-# Configuration
+Publish config
 
 ```shell
 php artisan vendor:publish --tag="samlidp_config"
@@ -130,9 +103,8 @@ return [
             // Simple Logout URL of the Service Provider
             'logout' => 'https://example.com/saml/sls',
         ]
-    ],
-    // List of guards saml idp will catch Authenticated, Login and Logout events (thanks @abublihi)
-    'guards' => ['web']
+    ]
+
 ];
 ```
 
