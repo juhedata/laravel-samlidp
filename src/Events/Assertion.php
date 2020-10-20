@@ -28,8 +28,10 @@ class Assertion
     public function __construct(\LightSaml\Model\Assertion\AttributeStatement &$attribute_statement)
     {
         $this->attribute_statement = &$attribute_statement;
+        $email = auth()->user()->{config('samlidp.email_field')};
+        $email = $email ?: 'null@null.com';
         $this->attribute_statement
-            ->addAttribute(new Attribute(ClaimTypes::EMAIL_ADDRESS, auth()->user()->{config('samlidp.email_field')}))
+            ->addAttribute(new Attribute(ClaimTypes::EMAIL_ADDRESS, $email))
             ->addAttribute(new Attribute(ClaimTypes::COMMON_NAME, auth()->user()->{config('samlidp.name_field')}));
     }
 }
